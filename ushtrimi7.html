@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="ushtrimi7.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ushtrimi7</title>
+    <h1 class="hederat">titulli 1</h1>
+    <h1 class="hederat">titulli 2</h1>
+    <h1 class="hederat">titulli 3</h1>
+</head>
+<body>
+    <p id="detyra1">Teksti i vjeter</p>
+    <button id="butoni">Button</button>
+    <p class="paragrafet">paragrafi 1</p>
+    <p class="paragrafet">paragrafi 2</p>
+    <p class="paragrafet">paragrafi 3</p>
+    <div id="divi"></div>
+    <li class="item">elementi 1    </li>
+    <li class="item">elementi 2    </li>
+    <li class="item">elementi 3    </li>
+</body>
+
+<script>
+    const detyra1 = document.getElementById("detyra1");
+    detyra1.textContent = "Përshendetje, studentë!";
+    const butoni = document.getElementById("butoni");
+    butoni.style.backgroundColor = "red";
+    const divi = document.getElementById("divi");
+    divi.style.border = "8px solid purple";
+    const hederat = document.querySelectorAll(".hederat");
+    hederat[0].textContent = "headeri 1";
+    
+    const paragrafet = document.querySelectorAll(".paragrafet");
+    paragrafet.forEach(p =>{
+        p.style.color="green";
+    } ) 
+    let count = 0;
+    const divi2 =document.getElementById("divi")
+    paragrafet.forEach(p =>{
+        count++;
+    } ) 
+    divi2.textContent ="Numri total i paragrafeve esht" + count;
+    
+
+</script>
+</html>
